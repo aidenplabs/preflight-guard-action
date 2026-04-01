@@ -121,6 +121,8 @@ This repository is the GitHub Action distribution surface. The checking engine a
 
 - `aidenplabs/preflight-guard`
 
+See [preflight-guard](https://github.com/aidenplabs/preflight-guard).
+
 Changes to rule behavior, stack detection, or findings generally belong in the core repository, not here.
 
 ## License
