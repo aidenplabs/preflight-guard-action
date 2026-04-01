@@ -151,4 +151,12 @@ runs:
             echo ""
             echo "This summary is heuristic and decision-oriented. It is not proof that an app is safe."
           } >> "$GITHUB_STEP_SUMMARY"
+          if [ -f "$MARKDOWN_PATH" ]; then
+            {
+              echo ""
+              echo "## Full Markdown Report"
+              echo ""
+              cat "$MARKDOWN_PATH"
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
         fi

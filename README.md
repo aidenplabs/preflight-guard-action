@@ -85,7 +85,7 @@ jobs:
 
 When the action runs, you should expect three main things:
 
-1. A GitHub step summary with the ship recommendation, support status, and report paths.
+1. A GitHub step summary with a compact recommendation section first, followed by the generated full Markdown report when it is available.
 2. A Markdown report at `OUTPUT_DIR/preflight-report.md`.
 3. A JSON report at `OUTPUT_DIR/preflight-report.json`.
 
