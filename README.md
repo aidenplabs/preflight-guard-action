@@ -117,11 +117,8 @@ The action also exposes outputs you can use in later workflow steps:
 
 ## Core Engine
 
-This repository is the GitHub Action distribution surface. The checking engine and rule logic live in the main open-source project:
-
-- `aidenplabs/preflight-guard`
-
-See [preflight-guard](https://github.com/aidenplabs/preflight-guard).
+This repository is the GitHub Action distribution surface. 
+The checking engine and rule logic live in the main open-source project: [preflight-guard](https://github.com/aidenplabs/preflight-guard).
 
 Changes to rule behavior, stack detection, or findings generally belong in the core repository, not here.
 
