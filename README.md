@@ -124,4 +124,4 @@ Changes to rule behavior, stack detection, or findings generally belong in the c
 
 ## License
 
-This project is available under the MIT License. See [LICENSE](/Users/aiden_mac/projects/preflight-guard-action/LICENSE).
+This project is available under the MIT License. See [LICENSE](/preflight-guard-action/LICENSE).
