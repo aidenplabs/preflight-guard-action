@@ -1,5 +1,9 @@
 name: "Preflight Guard"
 description: "Run a narrow set of pre-launch red-flag checks for supported Next.js + Vercel / Supabase combinations."
+author: "aidenplabs"
+branding:
+  icon: "alert-triangle"
+  color: "blue"
 inputs:
   path:
     description: "Repo path to scan."
