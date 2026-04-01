@@ -49,10 +49,12 @@ runs:
   steps:
     - name: Install dependencies
       shell: bash
+      working-directory: ${{ github.action_path }}
       run: npm ci
 
     - name: Build CLI
       shell: bash
+      working-directory: ${{ github.action_path }}
       run: npm run build
 
     - name: Run preflight scanner
@@ -60,11 +62,15 @@ runs:
       shell: bash
       run: |
         set +e
-        mkdir -p "${{ inputs.output-dir }}"
-        node dist/cli.js scan "${{ inputs.path }}" --output "${{ inputs.output-dir }}" --fail-on "${{ inputs.fail-on }}"
+        SCAN_PATH="${{ github.workspace }}/${{ inputs.path }}"
+        REPORT_DIR="${{ github.workspace }}/${{ inputs.output-dir }}"
+        JSON_PATH="$REPORT_DIR/preflight-report.json"
+        MARKDOWN_PATH="$REPORT_DIR/preflight-report.md"
+        mkdir -p "$REPORT_DIR"
+        node "${{ github.action_path }}/dist/cli.js" scan "$SCAN_PATH" --output "$REPORT_DIR" --fail-on "${{ inputs.fail-on }}"
         CLI_EXIT=$?
-        JSON_PATH="${{ inputs.output-dir }}/preflight-report.json"
-        MARKDOWN_PATH="${{ inputs.output-dir }}/preflight-report.md"
+        echo "scan_path=$SCAN_PATH" >> "$GITHUB_OUTPUT"
+        echo "report_dir=$REPORT_DIR" >> "$GITHUB_OUTPUT"
         echo "json_path=$JSON_PATH" >> "$GITHUB_OUTPUT"
         echo "markdown_path=$MARKDOWN_PATH" >> "$GITHUB_OUTPUT"
         echo "exit_code=$CLI_EXIT" >> "$GITHUB_OUTPUT"
@@ -77,6 +83,40 @@ runs:
       run: |
         JSON_PATH="${{ steps.run_preflight.outputs.json_path }}"
         MARKDOWN_PATH="${{ steps.run_preflight.outputs.markdown_path }}"
+        REPORT_DIR="${{ github.workspace }}/${{ inputs.output-dir }}"
+
+        if [ -z "$JSON_PATH" ]; then
+          JSON_PATH="$REPORT_DIR/preflight-report.json"
+        fi
+
+        if [ -z "$MARKDOWN_PATH" ]; then
+          MARKDOWN_PATH="$REPORT_DIR/preflight-report.md"
+        fi
+
+        if [ ! -f "$JSON_PATH" ]; then
+          echo "ship_recommendation=" >> "$GITHUB_OUTPUT"
+          echo "recommendation_summary=" >> "$GITHUB_OUTPUT"
+          echo "recommendation_basis=" >> "$GITHUB_OUTPUT"
+          echo "stack_confidence=" >> "$GITHUB_OUTPUT"
+          echo "profile_fit=" >> "$GITHUB_OUTPUT"
+          echo "support_status=" >> "$GITHUB_OUTPUT"
+          echo "combination=" >> "$GITHUB_OUTPUT"
+          echo "json_report_path=$JSON_PATH" >> "$GITHUB_OUTPUT"
+          echo "markdown_report_path=$MARKDOWN_PATH" >> "$GITHUB_OUTPUT"
+          if [ -n "$GITHUB_STEP_SUMMARY" ]; then
+            {
+              echo "## Preflight Summary"
+              echo ""
+              echo "The action did not produce a JSON report."
+              echo "This usually means an earlier setup or build step failed before the scan completed."
+              echo ""
+              echo "- expected markdown report: \`$MARKDOWN_PATH\`"
+              echo "- expected json report: \`$JSON_PATH\`"
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
+          exit 0
+        fi
+
         SHIP_RECOMMENDATION=$(node -e "const fs=require('fs');const p=process.argv[1];const d=JSON.parse(fs.readFileSync(p,'utf8'));process.stdout.write(d.shipRecommendation);" "$JSON_PATH")
         RECOMMENDATION_SUMMARY=$(node -e "const fs=require('fs');const p=process.argv[1];const d=JSON.parse(fs.readFileSync(p,'utf8'));process.stdout.write(d.recommendationSummary);" "$JSON_PATH")
         RECOMMENDATION_BASIS=$(node -e "const fs=require('fs');const p=process.argv[1];const d=JSON.parse(fs.readFileSync(p,'utf8'));process.stdout.write(d.recommendationBasis);" "$JSON_PATH")

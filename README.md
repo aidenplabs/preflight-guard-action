@@ -40,6 +40,7 @@ The reports explain what was found, why it matters, and the minimum fix to revie
 ## How To Use It
 
 Add this action to a workflow in the app repository you want to check.
+The action installs and builds its own runtime from the action repository, then scans the checked-out repository in your workflow workspace.
 
 ```yaml
 name: Preflight Guard
@@ -76,8 +77,8 @@ jobs:
 
 | Input | Default | What it does |
 | --- | --- | --- |
-| `path` | `.` | Repository path to scan |
-| `output-dir` | `.preflight-ci` | Where the Markdown and JSON reports are written |
+| `path` | `.` | Path inside the checked-out workflow repository to scan |
+| `output-dir` | `.preflight-ci` | Directory inside the checked-out workflow repository where the Markdown and JSON reports are written |
 | `fail-on` | `no` | Failure policy: `caution`, `no`, or `never` |
 
 ## Outputs And What To Expect
