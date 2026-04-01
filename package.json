@@ -1,0 +1,17 @@
+{
+  "name": "preflight-guard-action",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GitHub Action distribution repo for a narrow pre-deploy checker for supported Next.js + Vercel / Supabase setups.",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc --noEmit -p tsconfig.json",
+    "scan": "tsx src/cli.ts scan"
+  },
+  "devDependencies": {
+    "@types/node": "^24.6.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
