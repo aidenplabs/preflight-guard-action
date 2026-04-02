@@ -1,6 +1,6 @@
 # How To Use It
 
-0. Copy the below yaml file.
+step 0. Copy the below yaml file.
 
 ```yaml
 name: Preflight Guard
@@ -33,27 +33,29 @@ jobs:
           path: .preflight-ci/
 ```
 
+step 1. Open your own GitHub repository and click the Actions tab
+This is where you can create and run GitHub Actions workflows.
 
 ![Step 1](screenshots/screenshot1.png)
 
 
-![Step 2](screenshots/screenshot1.png)
+![Step 2](screenshots/screenshot2.png)
 
 
-![Step 3](screenshots/screenshot1.png)
+![Step 3](screenshots/screenshot3.png)
 
 
-![Step 4](screenshots/screenshot1.png)
+![Step 4](screenshots/screenshot4.png)
 
 
-![Step 5](screenshots/screenshot1.png)
+![Step 5](screenshots/screenshot5.png)
 
 
-![Step 6](screenshots/screenshot1.png)
+![Step 6](screenshots/screenshot6.png)
 
 
-![Step 7](screenshots/screenshot1.png)
+![Step 7](screenshots/screenshot7.png)
 
 
-![Step 8](screenshots/screenshot1.png)
+![Step 8](screenshots/screenshot8.png)
    
