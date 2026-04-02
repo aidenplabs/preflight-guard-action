@@ -2,6 +2,8 @@
 
 ## step 0. Copy the below yaml file.
 
+<br>
+
 ```yaml
 name: Preflight Guard
 
@@ -34,7 +36,7 @@ jobs:
 ```
 
 
-
+<br>
 
 ## step 1. Open your own GitHub repository and click the Actions tab.
 
@@ -44,7 +46,7 @@ jobs:
 ![Step 1](screenshots/screenshot1.png)
 
 
-
+<br>
 
 ## Step 2. Click "set up a workflow yourself"
 
@@ -55,7 +57,7 @@ Click the link to create your own workflow file.
 ![Step 2](screenshots/screenshot2.png)
 
 
-
+<br>
 
 ## Step 3. Add .yml file and commit
 
@@ -70,11 +72,12 @@ Click the link to create your own workflow file.
 
 ![Step 3](screenshots/screenshot3.png)
 
+<br>
 
 ![Step 4](screenshots/screenshot4.png)
 
 
-
+<br>
 
 ## Step 4. Go back to the Actions page
 
@@ -86,6 +89,7 @@ You should now see the new workflow in the left sidebar.
 
 
 
+<br>
 
 ## Step 5. Run the workflow
 
@@ -100,17 +104,18 @@ You should now see the new workflow in the left sidebar.
 
 ![Step 6](screenshots/screenshot6.png)
 
+<br>
 
 ![Step 7](screenshots/screenshot7.png)
 
 
 
-
+<br>
 ## Step 6. check out your result !
 
 
 ![Step 8](screenshots/screenshot8.png)
 
 
-
+<br>
    
