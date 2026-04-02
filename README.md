@@ -5,6 +5,19 @@ Free open-source GitHub Action for a small set of pre-launch red-flag checks in 
 This action is for beginner builders and solo builders who want a simple pre-deploy check in GitHub Actions before launch. It is intentionally narrow. It looks for a small set of common red flags and writes a plain-language report you can review before shipping.
 
 
+## What You Get
+
+When you run this action on a supported repo, it can give you:
+
+- a simple `ship: yes`, `ship: caution`, or `ship: no` recommendation
+- a compact GitHub job summary first
+- the full generated Markdown report underneath when available
+- a JSON report and Markdown report you can keep as artifacts
+- beginner-friendly explanations of what was found and why it matters
+- copy-paste AI handoff prompts for supported review-needed findings
+- structured execution-help blocks for the current supported repair paths
+
+
 ## Wait, New to GitHub Actions?
 
 If you are not sure how to set this up in your own repo yet, follow the step-by-step screenshot guide here:
