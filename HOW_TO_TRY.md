@@ -9,7 +9,7 @@
 
 <br>
 
-## step 0. Copy the below yaml file.
+## Step 0. Copy the below yaml file.
 
 <br>
 
@@ -47,7 +47,7 @@ jobs:
 
 <br>
 
-## step 1. Open your own GitHub repository and click the Actions tab.
+## Step 1. Open your own GitHub repository and click the Actions tab.
 
 - This is where you can create and run GitHub Actions workflows.
 
