@@ -74,7 +74,7 @@ jobs:
 
 <br>
 
-If you are new to GitHub Actions and want a step-by-step setup guide with screenshots, see [HOW_TO_TRY.md](./HOW_TO_TRY.md). (Beginner friendly!)
+#### If you are new to GitHub Actions and want a step-by-step setup guide with screenshots, see [HOW_TO_TRY.md](./HOW_TO_TRY.md). (Beginner friendly!)
 
 ## Inputs
 
