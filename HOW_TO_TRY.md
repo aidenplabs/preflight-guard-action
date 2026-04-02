@@ -1,6 +1,6 @@
 # How To Use It
 
-##step 0. Copy the below yaml file.
+## step 0. Copy the below yaml file.
 
 ```yaml
 name: Preflight Guard
