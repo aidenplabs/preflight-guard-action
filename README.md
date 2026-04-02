@@ -113,6 +113,28 @@ The action also exposes outputs you can use in later workflow steps:
 - `markdown-report-path`
 - `exit-code`
 
+
+## Real Example Results
+
+Here are a few public-repo example runs to show the kinds of outcomes this action can produce.
+
+- Clean supported repo -> `ship: yes`
+  - [next-supabase-stripe-starter](https://github.com/aidenplabs/next-supabase-stripe-starter/actions/runs/23878113636/attempts/1#summary-69625472476)
+  - Strong supported match, no current heuristic findings triggered.
+
+- Supported repo with a concrete review-needed finding -> `ship: caution`
+  - [vercel-ai-chatbot](https://github.com/aidenplabs/vercel-ai-chatbot/actions/runs/23876869380/attempts/1#summary-69621574394)
+  - Strong supported match, but review-needed auth-check findings were triggered.
+
+- Review-only clean repo -> `ship: caution`
+  - [nextjs/saas-starter](https://github.com/aidenplabs/saas-starter/actions/runs/23877014316/attempts/1#summary-69622037251)
+  - Clean scan, but not a strong enough supported combination for `ship: yes`.
+
+These examples are meant to show result shape and boundary behavior.
+They are not proof that a repo is safe or unsafe.
+
+
+
 ## Failure Modes
 
 - `fail-on: no` fails the job only when the recommendation is `no`
