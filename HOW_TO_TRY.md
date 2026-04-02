@@ -141,6 +141,9 @@ You should now see the new workflow in the left sidebar.
 Preflight Guard is still only a narrow heuristic review step.
 
 It is not:
+
     - a broad security scanner
+    
     - proof that an app is safe
+    
     - a replacement for manual review
