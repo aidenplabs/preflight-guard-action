@@ -72,6 +72,8 @@ jobs:
           path: .preflight-ci/
 ```
 
+If you are new to GitHub Actions and want a step-by-step setup guide with screenshots, see [HOW_TO_TRY.md](./HOW_TO_TRY.md).
+
 ## Inputs
 
 | Input | Default | What it does |
