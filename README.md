@@ -7,7 +7,11 @@ This action is for beginner builders and solo builders who want a simple pre-dep
 
 ## WAIT...! 
 
-Are you too new to GitHub Actions to understand this everything? Here is a step-by-step setup guide with screenshots, see [HOW_TO_TRY.md](./HOW_TO_TRY.md). Don't worry :) It's super Beginner friendly!
+Are you too new to GitHub Actions to understand this everything? 
+
+Here is a step-by-step setup guide with screenshots, see [HOW_TO_TRY.md](./HOW_TO_TRY.md). 
+
+Don't worry :) It's super Beginner friendly!
 
 
 ## Who This Is For
