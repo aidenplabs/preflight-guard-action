@@ -1,4 +1,4 @@
-# How To Use It
+# How To Use It (beginner friendly!)
 
 ## step 0. Copy the below yaml file.
 
