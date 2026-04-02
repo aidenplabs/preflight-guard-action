@@ -1,17 +1,17 @@
 # Preflight Guard Action
 
-Free open-source GitHub Action for a small set of pre-launch red-flag checks in supported Next.js + Vercel / Supabase setups.
+Free open-source GitHub Action for a small set of pre-launch red-flag checks in supported Next.js + Vercel, Next.js + Supabase, and Next.js + Supabase + Vercel repos.
 
 This action is for beginner builders and solo builders who want a simple pre-deploy check in GitHub Actions before launch. It is intentionally narrow. It looks for a small set of common red flags and writes a plain-language report you can review before shipping.
 
 
-## WAIT...! 
+## Wait, New to GitHub Actions?
 
-Are you too new to GitHub Actions to understand this everything? 
+If you are not sure how to set this up in your own repo yet, follow the step-by-step screenshot guide here:
 
-Here is a step-by-step setup guide with screenshots, see [HOW_TO_TRY.md](./HOW_TO_TRY.md). 
+[HOW_TO_TRY.md](./HOW_TO_TRY.md)
 
-Don't worry :) It's super beginner friendly!
+It is written to be beginner-friendly.
 
 
 ## Who This Is For
