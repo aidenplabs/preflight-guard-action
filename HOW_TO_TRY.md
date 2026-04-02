@@ -42,6 +42,7 @@ jobs:
 
 - This is where you can create and run GitHub Actions workflows.
 
+<br>
 
 ![Step 1](screenshots/screenshot1.png)
 
@@ -53,6 +54,7 @@ jobs:
 - If this is your first workflow in the repo, GitHub will show a setup screen.
 Click the link to create your own workflow file.
 
+<br>
 
 ![Step 2](screenshots/screenshot2.png)
 
@@ -69,6 +71,7 @@ Click the link to create your own workflow file.
 
 - Then commit the file directly to your main branch, or use a pull request if you prefer.
 
+<br>
 
 ![Step 3](screenshots/screenshot3.png)
 
@@ -84,6 +87,7 @@ Click the link to create your own workflow file.
 - After the workflow file is committed, go back to the Actions tab.
 You should now see the new workflow in the left sidebar.
 
+<br>
 
 ![Step 5](screenshots/screenshot5.png)
 
@@ -102,6 +106,8 @@ You should now see the new workflow in the left sidebar.
 
 - and.. wait for the run to finish...
 
+<br>
+
 ![Step 6](screenshots/screenshot6.png)
 
 <br>
@@ -111,8 +117,9 @@ You should now see the new workflow in the left sidebar.
 
 
 <br>
-## Step 6. check out your result !
+## Step 6. Check out your result !
 
+<br>
 
 ![Step 8](screenshots/screenshot8.png)
 
