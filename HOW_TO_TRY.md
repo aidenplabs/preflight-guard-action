@@ -4,6 +4,7 @@
 ! This guide shows the easiest way to try Preflight Guard in your own GitHub repository.
 
 ! You do not need to fork or clone the Preflight Guard repo.
+
 ! You only need to add one GitHub Actions workflow file in your own repository.
 
 <br>
