@@ -1,5 +1,5 @@
 # How To Use Preflight Guard! 
-"beginner friendly version"
+
 
 ! This guide shows the easiest way to try Preflight Guard in your own GitHub repository.
 
