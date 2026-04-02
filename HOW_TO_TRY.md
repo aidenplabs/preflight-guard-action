@@ -1,11 +1,11 @@
-# How To Use Preflight Guard! 
+# How To Try Preflight Guard 
 
 
-! This guide shows the easiest way to try Preflight Guard in your own GitHub repository.
+This guide shows the easiest way to try Preflight Guard in your own GitHub repository.
 
-! You do not need to fork or clone the Preflight Guard repo.
+You do not need to fork or clone the Preflight Guard repository.
 
-! You only need to add one GitHub Actions workflow file in your own repository.
+You only need to add one GitHub Actions workflow file in your own repository.
 
 <br>
 
@@ -135,4 +135,12 @@ You should now see the new workflow in the left sidebar.
 
 
 <br>
-   
+
+## Important Note
+
+Preflight Guard is still only a narrow heuristic review step.
+
+It is not:
+    - a broad security scanner
+    - proof that an app is safe
+    - a replacement for manual review
