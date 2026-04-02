@@ -117,6 +117,7 @@ You should now see the new workflow in the left sidebar.
 
 
 <br>
+
 ## Step 6. Check out your result !
 
 <br>
