@@ -133,7 +133,7 @@ The action also exposes outputs you can use in later workflow steps:
 Here are a few public-repo example runs to show the kinds of outcomes this action can produce.
 
 - Clean supported repo -> `ship: yes`
-  - [next-supabase-stripe-starter](https://github.com/aidenplabs/next-supabase-stripe-starter/actions/runs/23878113636/attempts/1#summary-69625472476)
+  - [next-supabase-stripe-starter](https://github.com/aidenplabs/next-supabase-stripe-starter/actions/runs/23886243745/attempts/1#summary-69649557209)
   - Strong supported match, no current heuristic findings triggered.
 
 - Supported repo with a concrete review-needed finding -> `ship: caution`
