@@ -2,10 +2,9 @@
 
 Free open-source GitHub Action for a small set of pre-launch red-flag checks in supported Next.js + Vercel, Next.js + Supabase, and Next.js + Supabase + Vercel repos.
 
-This action is for beginner builders, solo builders, students, and small teams who want a simple pre-deploy check in GitHub Actions before launch. It is intentionally narrow. It looks for a small set of common red flags and writes a plain-language report you can review before shipping.
+This action is for beginner builders, solo builders, students, and small teams who want a simple pre-deploy check in GitHub Actions before launch. It looks for a small set of common red flags and writes a plain-language report you can review before shipping.
 
-It was made for a simple reason: more people now ship quickly with common stacks like Next.js, Supabase, and Vercel, often with code assembled from docs, examples, and AI-assisted workflows. The goal is to give people one more practical review step before deployment without turning this into a broad scanner or pretending it proves an app is safe.
-
+It was made for a simple reason: more people now build and ship quickly with common stacks like Next.js, Supabase, and Vercel, often with code assembled from docs, examples, and AI-assisted workflows. When people move fast, security-related mistakes and risky patterns can get overlooked before deployment. The goal is to give people one more practical review step before launch and help them catch at least some of those issues earlier.
 
 ## What You Get
 
@@ -31,9 +30,9 @@ It is written to be beginner-friendly.
 
 ## Who This Is For
 
-- Beginner or solo builders shipping a Next.js app
-- Teams using Vercel, Supabase, or both in a supported setup
-- People who want a lightweight warning step in CI, not a broad scanner
+- Beginner or solo builders shipping on Next.js
+- Students and small teams using Vercel, Supabase, or both in a supported setup
+- People who want one more practical check in CI before deployment
 
 ## Supported Stacks
 
