@@ -4,9 +4,6 @@ Free open-source GitHub Action for a small set of pre-launch red-flag checks in 
 
 This action is for beginner builders and solo builders who want a simple pre-deploy check in GitHub Actions before launch. It is intentionally narrow. It looks for a small set of common red flags and writes a plain-language report you can review before shipping.
 
-Looking for the core CLI repo? See [preflight-guard](https://github.com/aidenplabs/preflight-guard).
-
-Looking for the GitHub Action version? See [preflight-guard-action](https://github.com/aidenplabs/preflight-guard-action).
 
 ## Who This Is For
 
@@ -120,9 +117,15 @@ The action also exposes outputs you can use in later workflow steps:
 ## Core Engine
 
 This repository is the GitHub Action distribution surface. 
+
 The checking engine and rule logic live in the main open-source project: [preflight-guard](https://github.com/aidenplabs/preflight-guard).
 
 Changes to rule behavior, stack detection, or findings generally belong in the core repository, not here.
+
+
+
+Looking for the GitHub Action version? See [preflight-guard-action](https://github.com/aidenplabs/preflight-guard-action).
+
 
 ## License
 
