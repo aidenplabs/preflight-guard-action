@@ -34,12 +34,16 @@ jobs:
 ```
 
 
+
+
 ## step 1. Open your own GitHub repository and click the Actions tab.
 
 - This is where you can create and run GitHub Actions workflows.
 
 
 ![Step 1](screenshots/screenshot1.png)
+
+
 
 
 ## Step 2. Click "set up a workflow yourself"
@@ -49,6 +53,8 @@ Click the link to create your own workflow file.
 
 
 ![Step 2](screenshots/screenshot2.png)
+
+
 
 
 ## Step 3. Add .yml file and commit
@@ -68,6 +74,8 @@ Click the link to create your own workflow file.
 ![Step 4](screenshots/screenshot4.png)
 
 
+
+
 ## Step 4. Go back to the Actions page
 
 - After the workflow file is committed, go back to the Actions tab.
@@ -75,6 +83,8 @@ You should now see the new workflow in the left sidebar.
 
 
 ![Step 5](screenshots/screenshot5.png)
+
+
 
 
 ## Step 5. Run the workflow
@@ -92,6 +102,8 @@ You should now see the new workflow in the left sidebar.
 
 
 ![Step 7](screenshots/screenshot7.png)
+
+
 
 
 ## Step 6. check out your result !
