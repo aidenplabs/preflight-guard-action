@@ -11,7 +11,7 @@ Are you too new to GitHub Actions to understand this everything?
 
 Here is a step-by-step setup guide with screenshots, see [HOW_TO_TRY.md](./HOW_TO_TRY.md). 
 
-Don't worry :) It's super Beginner friendly!
+Don't worry :) It's super beginner friendly!
 
 
 ## Who This Is For
