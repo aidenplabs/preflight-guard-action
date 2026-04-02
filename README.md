@@ -5,6 +5,7 @@ Free open-source GitHub Action for a small set of pre-launch red-flag checks in 
 This action is for beginner builders and solo builders who want a simple pre-deploy check in GitHub Actions before launch. It is intentionally narrow. It looks for a small set of common red flags and writes a plain-language report you can review before shipping.
 
 Looking for the core CLI repo? See [preflight-guard](https://github.com/aidenplabs/preflight-guard).
+
 Looking for the GitHub Action version? See [preflight-guard-action](https://github.com/aidenplabs/preflight-guard-action).
 
 ## Who This Is For
